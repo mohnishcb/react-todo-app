@@ -1,0 +1,131 @@
+/* TodoApp.css */
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.todo-app {
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  height: calc(100vh - 100px);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  /* align-items: center; */
+}
+
+.todo-search-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.search-field {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+.input-field {
+  width: 64%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+.todo-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn {
+  height: 38.5px;
+  width: 15%;
+  padding: 5px 8px;
+  border: 2px solid white;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: black;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.todo-text {
+  word-break: break-word;
+}
+
+.delete-btn {
+  padding: 5px 8px;
+  border: 2px solid white;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background: red;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .todo-app {
+    width: calc(100vw - 100px);
+  }
+}
+
+/* @media only screen and (max-width: 500px) {
+  .todo-app {
+    width: calc(100vw - 40px);
+  }
+} */

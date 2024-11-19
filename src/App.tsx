@@ -1,11 +1,11 @@
-import React from "react";
-import "./App.css";
-// import { getTodoList, addTodo, deleteTodo } from "./services/todoApiService";
+import TodoApp from "./components/todo/TodoApp";
 
 function App(): JSX.Element {
-  React.useEffect(() => {}, []);
-
-  return <></>;
+  return (
+    <div className="appContainer">
+      <TodoApp />
+    </div>
+  );
 }
 
 export default App;

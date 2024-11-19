@@ -17,7 +17,7 @@ export const handlers = [
       completed: false,
     };
     todos.push(newTodo);
-    return HttpResponse.json({ data: [...todos] }, { status: 200 });
+    return HttpResponse.json({ data: { ...newTodo } }, { status: 200 });
   }),
 
   http.delete("/todos/:id", ({ params }) => {
